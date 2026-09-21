@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "seasons.html",
+    "href": "seasons.html",
+    "title": "Mallard Duck Movement",
+    "section": "",
+    "text": "# A tibble: 12 × 2\n   month     gps_fixes\n   &lt;ord&gt;         &lt;int&gt;\n 1 January        3266\n 2 February       4960\n 3 March          7524\n 4 April          6369\n 5 May            3423\n 6 June           2842\n 7 July           5748\n 8 August         9659\n 9 September     20977\n10 October        9890\n11 November       4825\n12 December       3796\n\n\n\n\n# A tibble: 1 × 6\n  min_speed median_speed mean_speed max_speed sd_speed     n\n      &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;int&gt;\n1         0         0.22      0.416      127.     1.40 83279\n\n\n\n\n# A tibble: 12 × 3\n   season month     mean_speed\n   &lt;ord&gt;  &lt;ord&gt;          &lt;dbl&gt;\n 1 Spring March          0.372\n 2 Spring April          0.360\n 3 Spring May            0.335\n 4 Summer June           0.307\n 5 Summer July           0.481\n 6 Summer August         0.474\n 7 Autumn September      0.438\n 8 Autumn October        0.400\n 9 Autumn November       0.338\n10 Winter January        0.329\n11 Winter February       0.358\n12 Winter December       0.327"
+  },
+  {
+    "objectID": "analysis.html",
+    "href": "analysis.html",
+    "title": "Mallard Duck Movement",
+    "section": "",
+    "text": "Mallard ducks are a familiar and adaptable species of freshwater waterfowl, recognizable by their iridescent green heads and broad wings. They are common across Europe and North America, often found in wetlands, lakes, and rivers where they forage in shallow water and grass. This project examines how these birds move through the landscape and how their behavior changes across seasons.\nLake Constance is a large freshwater lake on the border of Germany, Switzerland, and Austria, surrounded by wetlands and agricultural land that provide important habitat for many birds. Because it sits at the junction of several migration routes, it is a useful place to study how ducks use space during the year. The GPS data offers a detailed view of movement patterns in this region.\nThe tracking data reveals where individual ducks travel, how often they are recorded, and how far they move over time. By mapping fixes and summarizing their locations, we can see the geographic range of the study and the timing of movements across the seasons. These patterns help us understand how Mallards use the lake and surrounding habitat."
+  },
+  {
+    "objectID": "analysis.html#gps-fixes-per-duck",
+    "href": "analysis.html#gps-fixes-per-duck",
+    "title": "Mallard Duck Movement",
+    "section": "GPS fixes per duck",
+    "text": "GPS fixes per duck\n\n\n# A tibble: 52 × 2\n   duck_id                    gps_fixes\n   &lt;chr&gt;                          &lt;int&gt;\n 1 2351 - Radolfzell JC 72052     20169\n 2 1806 - Radolfzell JC70792      10139\n 3 2318 - Radolfzell JC 72053      9522\n 4 2312 - Radolfzell JC 72051      7163\n 5 2497 - Radolfzell JC74415       4835\n 6 2339 - Radolfzell JC 72018      4645\n 7 2495 - Radolfzell JC74406       3030\n 8 2501 - Radolfzell JC74418       2861\n 9 2502 - Radolfzell JC74417       2715\n10 2489 - Radolfzell JC74412       2514\n# ℹ 42 more rows"
+  },
+  {
+    "objectID": "analysis.html#geographic-range",
+    "href": "analysis.html#geographic-range",
+    "title": "Mallard Duck Movement",
+    "section": "Geographic range",
+    "text": "Geographic range\n\n\n# A tibble: 1 × 4\n  min_lat max_lat min_lon max_lon\n    &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;\n1    47.3    53.9    7.83    23.6"
+  }
+]
