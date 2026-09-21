@@ -1,0 +1,37 @@
+---
+title: "Mallard Duck Movement"
+author: "GitHub Copilot"
+execute:
+  echo: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(sf)
+```
+
+```{r}
+#| cache: true
+mallards <- readRDS("data/mallards.rds")
+```
+
+```{r}
+#| message: false
+world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
+
+mallards_sf <- mallards |>
+  filter(between(lat, 46, 55), between(long, 7, 25)) |>
+  st_as_sf(coords = c("long", "lat"), crs = 4326)
+
+ggplot() +
+  geom_sf(data = world, fill = "lightgray") +
+  geom_sf(data = mallards_sf, aes(color = duck_id), size = 0.5, alpha = 0.8) +
+  coord_sf(xlim = c(7, 25), ylim = c(46, 55), expand = FALSE) +
+  labs(
+    x = "Longitude",
+    y = "Latitude",
+    color = "Duck"
+  ) +
+  theme_minimal()
+```
