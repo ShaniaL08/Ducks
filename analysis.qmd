@@ -16,6 +16,16 @@ library(sf)
 mallards <- readRDS("data/mallards.rds")
 ```
 
+Mallard ducks are a familiar and adaptable species of freshwater waterfowl, recognizable by their iridescent green heads and broad wings. They are common across Europe and North America, often found in wetlands, lakes, and rivers where they forage in shallow water and grass. This project examines how these birds move through the landscape and how their behavior changes across seasons.
+
+Lake Constance is a large freshwater lake on the border of Germany, Switzerland, and Austria, surrounded by wetlands and agricultural land that provide important habitat for many birds. Because it sits at the junction of several migration routes, it is a useful place to study how ducks use space during the year. The GPS data offers a detailed view of movement patterns in this region.
+
+The tracking data reveals where individual ducks travel, how often they are recorded, and how far they move over time. By mapping fixes and summarizing their locations, we can see the geographic range of the study and the timing of movements across the seasons. These patterns help us understand how Mallards use the lake and surrounding habitat.
+
+<div style="display: flex; justify-content: center;">
+  <img src="images/mallard.jpg" style="height: 300px; width: auto;"/>
+</div>
+
 ## GPS fixes per duck
 
 ```{r}
